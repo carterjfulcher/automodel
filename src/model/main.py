@@ -1,4 +1,6 @@
 from src.interface import IEXData
+from typing import List
+import numpy as np 
 import pandas as pd 
 
 db = IEXData()
@@ -21,29 +23,24 @@ def create_model(symbol, save_to_excel=False):
     model.to_excel(f"models/model-{symbol}.xlsx")
   return model
 
-def forecast(symbol, model, save_to_excel=False):
+def forecast(symbol, model, discount, terminal_growth, save_to_excel=False):
+
+  model = model.T
 
   #calculate the change in revenue for each quarter
-  model = model.T
-  model['revenueChange'] = model['totalRevenue'].astype('int64').pct_change()
+  change_in_revenue = model['totalRevenue'].pct_change()
+  avg_revenue_growth = change_in_revenue.mean()
 
-  average_revenue_change = model['revenueChange'].mean()
+  print(avg_revenue_growth)
+
+
   
-  # add four columns for forecasting in Qx-YYYY format
-  current_quarter = (pd.Timestamp.now().quarter)
-  current_year = pd.Timestamp.now().year
-
-  quarters = [f"Q{x}-{current_year}" for x in range(current_quarter, current_quarter+4)][1:]
-  model = model.T
-  # append quarters as blank columns
-  for quarter in quarters:
-    model[quarter] = ''
   if save_to_excel:
-    model.to_excel(f"models/model-{symbol}.xlsx")
+    model.T.to_excel(f"models/model-{symbol}.xlsx")
 
 companies = ['AAPL']
 for company in companies:
   model = create_model(company, save_to_excel=False)
-  forecast(company, model, save_to_excel=True)
+  forecast(company, model, .09, .01, save_to_excel=True)
 
 
