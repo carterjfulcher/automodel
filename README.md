@@ -1,5 +1,7 @@
 # Auto Model
 
+### Creates financial models instantly
+
 ### Steps
 
 1. Read data

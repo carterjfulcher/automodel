@@ -1,3 +1,4 @@
 src/.iexkey.txt
 models/
 env/
+.DS_Store
