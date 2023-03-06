@@ -37,11 +37,11 @@ from the direct sale of commodities:
 
 ![epd revenue sheet](./images/revenue.png)
 
-### Midstream Market
+<!-- ### Midstream Market
 
 There are approximately 100 other midstream companies (globally):
 
-![Midstream Peers](./images/EQSMidstreamPeers.png)
+![Midstream Peers](./images/EQSMidstreamPeers.png) -->
 
 ### Financial Analysis
 
@@ -51,12 +51,26 @@ and apply that on a look-forward basis.
 
 > By the way, this model was automatically generated with software I wrote (this repository)
 > called `automodel`. [Check it out](https://github.com/carterjfulcher/automodel) and create
-> your own models quickly.
+> your own models with this tool.
 
 ### Analyst Recommendations
+
+84% of analysts suggest buying EPD, while the other 16% are recommending a hold. The general
+consensus on a twelve month target price is $31.66 (+21.3%). JP Morgan analyst Jeremy Tonet
+highlighted the $300 million increase in assets under construction, 580 miles of pipeline
+purchased, and $400 million growth in capex.
+
+> EPD’s Four Operating Segments Produced Mixed Results, But Overall Still Strong. Despite global GDP growth weakening throughout 2022, demand for crude oil, natural gas, NGLs, and petrochemicals remained strong overall, and so did the commodity price environment (although pullbacks in commodity prices were more evident in 4Q22). Despite the challenging market environment, EPD’s total gross operating margin continued to show strength, up 11.8% to $2.400 billion compared with $2.146 billion a year ago. Overall, the gains in gross operating margin in EPD’s NGL Pipeline & Services and Onshore Natural Gas Pipeline & Services segments were up significantly and more than offset the slight weakness in gross operating margin in EPD’s Onshore Crude Oil Pipelines & Services and Petrochemical & Refined Products Services segments
+> Source: Jones Research
+
+Over all, EPD looks strong in analyst ratings:
+
+![ANR Ratings](./images/BBG%20ANR.png)
 
 ### Conclusion
 
 ### Sources
 
 [Midstream EV Comparisons](./EVComparisonsMidstream.xlsx)
+[EPD Financial Model](./model-EPD.xlsx)
+[Jones Research Q4 Commentary](./JonesTrading%20EPD%20Finishing%202022%20With%20Better-Than-Expected%204Q22%20Results%3B%20W.pdf)

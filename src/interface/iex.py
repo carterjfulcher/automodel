@@ -1,5 +1,6 @@
 import requests
 import pandas as pd 
+import numpy as np
 
 class IEXData():
   def __init__(self, key=None):
@@ -31,6 +32,18 @@ class IEXData():
     df = pd.DataFrame(requests.get(url).json()['cashflow'])
     return self._quarterly_format(df)
   
+  def get_quarterly_prices(self, symbol: str, dates: pd.Series, n_quarters=4) -> np.array:
+    prices = []
+    for date in dates:
+      formatted_date = date.replace("-", "")
+      url = f"{self.base}/stock/{symbol}/chart/date/{formatted_date}?token={self.key}&chartByDay=true"
+      try:
+        prices.append(requests.get(url).json()[0]['close'])
+      except IndexError: 
+        prices.append(np.nan)
+        print(f"Warning: no price data for {symbol} on {date}")
+
+    return np.array(prices)
 
 
 

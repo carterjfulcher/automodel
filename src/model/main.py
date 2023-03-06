@@ -11,10 +11,17 @@ def create_model(symbol, save_to_excel=False):
   balance_sheets = db.get_balance_sheets(symbol, n_quarters=12)
   cash_flow = db.get_cashflow_statements(symbol, n_quarters=12)
 
+  prices = db.get_quarterly_prices(symbol, income['fiscalDate'])
+
+  income['price'] = prices
+
+  print(income)
+
+
   model = pd.concat([income, balance_sheets, cash_flow], axis=1)
   model = model.loc[:,~model.columns.duplicated()].copy().T
 
-  remove_cols = ['currency', 'filingType', 'fiscalQuarter', 'fiscalYear', 'reportDatel', 'symbol', 'id', 'key', 'subkey', 'date', 'updated']
+  remove_cols = ['currency', 'filingType', 'fiscalQuarter', 'fiscalYear', 'reportDate', 'symbol', 'id', 'key', 'subkey', 'date', 'updated']
   model = model.drop(remove_cols, axis=0, errors='ignore')
   model = model[model.columns[::-1]]
 
