@@ -38,7 +38,14 @@ def forecast(symbol, model, discount, terminal_growth, save_to_excel=False):
   change_in_revenue = model['totalRevenue'].pct_change()
   avg_revenue_growth = change_in_revenue.mean()
 
-  print(avg_revenue_growth)
+  change_in_cost = model['operatingExpense'].pct_change()
+  avg_cost_growth = change_in_cost.mean()
+
+  change_in_ebit = model['ebit'].pct_change()
+  avg_ebit_growth = change_in_ebit.mean()
+
+
+  print(avg_revenue_growth, avg_cost_growth, avg_ebit_growth)
 
 
   

@@ -53,6 +53,10 @@ and apply that on a look-forward basis.
 > called `automodel`. [Check it out](https://github.com/carterjfulcher/automodel) and create
 > your own models with this tool.
 
+EPD has seen a average quarter by quarter revenue growth of 6.7%, with a 7.6% increase in
+expenses each quarter. EPD is in a stage of growth as energy demand soars boasting an average
+EBIT increase of 8.1% each quarter.
+
 ### Analyst Recommendations
 
 84% of analysts suggest buying EPD, while the other 16% are recommending a hold. The general
