@@ -1,6 +1,7 @@
 # Auto Model
 
 ### Creates financial models instantly
+![model](https://github.com/carterjfulcher/automodel/blob/main/img/sample.png)
 
 ### Steps
 
