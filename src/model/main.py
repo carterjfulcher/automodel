@@ -38,7 +38,7 @@ def forecast(symbol, model, discount, terminal_growth, save_to_excel=False):
   if save_to_excel:
     model.T.to_excel(f"models/model-{symbol}.xlsx")
 
-companies = ['AAPL']
+companies = ['EPD']
 for company in companies:
   model = create_model(company, save_to_excel=False)
   forecast(company, model, .09, .01, save_to_excel=True)
