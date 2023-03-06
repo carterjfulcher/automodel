@@ -4,7 +4,21 @@
 
 Enterprise (EPD) is a limited partnership that specializes in the
 sale and delivery of commodities including natural gas, crude oil,
-petrochemical, and other refined products. Several attributes of
+petrochemical, and other refined products. EPD markets themselves as a
+_midstream energy asset network (or "value chain")_. Their operations include
+the excavation, processing, refining, transporting and storing of crude oil,
+NGLs (or "natural gas liquids"), natural gas, petrochemical, and other refined
+energy products.
+
+EPD owns 23 NGL processing facilities all across the United States that have the
+ability to process 10.85 billion cubic feet of liquid natural gas per day which
+are at a weighted-average utilization rate of 66.5% as of Q4 2022.
+
+Other ventures include the twenty-thousand miles of NGL pipelines, twenty-one different
+storage facilities, six-thousand miles of crude oil pipelines, seven crude oil terminals,
+twenty-thousand miles of natural gas pipelines, and seven petrochemical processing plants.
+
+Several attributes of
 EPD are appealing to investors, such as their generous `7.3%` dividend
 (as of 3/5/23), of which has increased year over year since their inception
 in 1968. There large dividend is of course due to their operation as a K-1
