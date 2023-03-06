@@ -1,4 +1,4 @@
-# [ENTERPRISE PRODUCTS PARTNERS L.P.](https://www.sec.gov/edgar/browse/?CIK=1061219&owner=exclude)
+# Analysis of [ENTERPRISE PRODUCTS PARTNERS L.P.](https://www.sec.gov/edgar/browse/?CIK=1061219&owner=exclude)
 
 ### Introduction
 
@@ -29,12 +29,34 @@ EPD reports a meager $76 million in cash and equivalents, but with $28.9 billion
 debt, Enterprise has an operational value (EV) of $86.6 Billion, which is very
 similar to EPD's direct peers.
 
-<!-- ![epd dividend image](./images/dividend.png) -->
-
-EPD also allows investors to have exposure to the commodities while limiting
-some of the volatility and downside risk. Many investors believe EPD to be
-a primarily midstream company, however, according to their most recent 10K
-filing, EPD makes approximately 88% of it's revenue from the sale of commodities
-themselves:
+Another advantage of EPD, and midstream in general, is that it allows investors
+to have exposure to the commodities while limiting some of the volatility and
+downside risk. Many investors believe EPD to be solely a midstream company, however,
+according to their most recent 10K filing, EPD makes approximately 88% of it's revenue
+from the direct sale of commodities:
 
 ![epd revenue sheet](./images/revenue.png)
+
+### Midstream Market
+
+There are approximately 100 other midstream companies (globally):
+
+![Midstream Peers](./images/EQSMidstreamPeers.png)
+
+### Financial Analysis
+
+See the attached, `model-EPD.xlsx` to see EPD's cash flow, balance sheet, and income modeled
+for the trailing twelve quarters. This model attempts to reverse engineer the market's pricing
+and apply that on a look-forward basis.
+
+> By the way, this model was automatically generated with software I wrote (this repository)
+> called `automodel`. [Check it out](https://github.com/carterjfulcher/automodel) and create
+> your own models quickly.
+
+### Analyst Recommendations
+
+### Conclusion
+
+### Sources
+
+[Midstream EV Comparisons](./EVComparisonsMidstream.xlsx)
